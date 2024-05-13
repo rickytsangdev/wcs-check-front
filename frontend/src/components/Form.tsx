@@ -119,7 +119,7 @@ export default function Form() {
 						name="continent"
 						onChange={handleChange}
 					>
-						<option value="">Choisir un continent</option>
+						<option value="">Select a continent</option>
 						{data?.continents.map((continent) => (
 							<option value={continent.id} key={continent.id}>
 								{continent.name}

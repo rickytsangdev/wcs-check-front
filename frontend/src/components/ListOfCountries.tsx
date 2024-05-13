@@ -31,9 +31,9 @@ const ListOfCountries: React.FC = () => {
 	if (error) return <p>Une erreur est survenue : {error.message}</p>;
 
 	return (
-		<section>
+		<section className="h-screen overflow-y-scroll">
 			<div className="p-4">
-				<h1 className="text-2xl font-bold mb-4 text-black text-center">
+				<h1 className="text-2xl font-bold mb-4 text-white text-center">
 					All Countries
 				</h1>
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -44,7 +44,7 @@ const ListOfCountries: React.FC = () => {
 								href={`/country/${code}`}
 								className="block p-4 border border-gray-200 rounded-lg shadow hover:shadow-md cursor-pointer transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
 							>
-								<p className="text-lg font-semibold text-center">
+								<p className="text-lg font-semibold text-center text-white">
 									{name} {emoji}
 								</p>
 							</Link>

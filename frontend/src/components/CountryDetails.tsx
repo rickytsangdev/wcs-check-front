@@ -49,10 +49,10 @@ const CountryDetails: React.FC = () => {
 
 	return (
 		<div>
-			<h1 className="text-2xl font-bold mb-4 text-black text-center pt-5">
+			<h1 className="text-2xl font-bold mb-4 text-white text-center pt-5">
 				Country Details
 			</h1>
-			<div className="flex justify-center flex-col items-center text-black">
+			<div className="flex justify-center flex-col items-center text-white">
 				<p className="text-5xl pb-3">{emoji}</p>
 				<p>
 					Name: {name} ({data.country.code})
